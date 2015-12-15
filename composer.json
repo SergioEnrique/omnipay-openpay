@@ -1,7 +1,7 @@
 {
-    "name": "omnipay/stripe",
+    "name": "SergioEnrique/omnipay-openpay",
     "type": "library",
-    "description": "Stripe driver for the Omnipay payment processing library",
+    "description": "Openpay driver for the Omnipay payment processing library",
     "keywords": [
         "gateway",
         "merchant",
@@ -10,9 +10,13 @@
         "payment",
         "stripe"
     ],
-    "homepage": "https://github.com/thephpleague/omnipay-stripe",
+    "homepage": "https://github.com/SergioEnrique/omnipay-openpay",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Sergio Enrique Vargas",
+            "email": "sergioenrique@me.com"
+        },
         {
             "name": "Adrian Macneil",
             "email": "adrian@adrianmacneil.com"
