@@ -246,7 +246,7 @@ class Gateway extends AbstractGateway
 
     //
     // Cards
-    // @link https://Openpay.com/docs/api#cards
+    // @link http://www.openpay.mx/en/docs/api/#cards
     //
 
     /**
@@ -280,7 +280,7 @@ class Gateway extends AbstractGateway
      *
      * This requires both a customerReference and a cardReference.
      *
-     * @link https://Openpay.com/docs/api#update_card
+     * @link http://www.openpay.mx/en/docs/api/#update_card
      * @param array $parameters
      * @return \Omnipay\Openpay\Message\UpdateCardRequest
      */
@@ -323,7 +323,7 @@ class Gateway extends AbstractGateway
 
     //
     // Customers
-    // link: https://Openpay.com/docs/api#customers
+    // link: http://www.openpay.mx/en/docs/api/#customers
     //
     
     /**
@@ -388,7 +388,7 @@ class Gateway extends AbstractGateway
 
     //
     // Tokens
-    // @link https://Openpay.com/docs/api#tokens
+    // @link http://www.openpay.mx/en/docs/api/#tokens
     //
     // This gateway does not currently have a CreateToken message.  In
     // any case tokens are probably not what you are looking for because

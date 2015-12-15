@@ -18,7 +18,7 @@ namespace Omnipay\Openpay\Message;
  *
  * This requires both a customerReference and a cardReference.
  *
- * @link https://Openpay.com/docs/api#update_card
+ * @link http://www.openpay.mx/en/docs/api/#update_card
  */
 class UpdateCardRequest extends AbstractRequest
 {

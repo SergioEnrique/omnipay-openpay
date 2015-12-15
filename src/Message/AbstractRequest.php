@@ -28,7 +28,7 @@ namespace Omnipay\Openpay\Message;
  * for testing.
  *
  * @see \Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api
+ * @link http://www.openpay.mx/en/docs/api/
  * @method \Omnipay\Openpay\Message\Response send()
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest

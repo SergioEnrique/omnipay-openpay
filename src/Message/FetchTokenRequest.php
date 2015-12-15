@@ -20,7 +20,7 @@ namespace Omnipay\Openpay\Message;
  * than once—to store these details for use later, you should create
  * Customer or Recipient objects. 
  *
- * @link https://Openpay.com/docs/api#tokens
+ * @link http://www.openpay.mx/en/docs/api/#tokens
  */
 class FetchTokenRequest extends AbstractRequest
 {

@@ -23,7 +23,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see PurchaseRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api#retrieve_charge
+ * @link http://www.openpay.mx/en/docs/api/#retrieve_charge
  */
 class FetchTransactionRequest extends AbstractRequest
 {

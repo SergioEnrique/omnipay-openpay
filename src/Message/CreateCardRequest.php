@@ -57,7 +57,7 @@ namespace Omnipay\Openpay\Message;
  * </code>
  *
  * @see CreateCustomerRequest
- * @link https://Openpay.com/docs/api#create_card
+ * @link http://www.openpay.mx/en/docs/api/#create_card
  */
 class CreateCardRequest extends AbstractRequest
 {

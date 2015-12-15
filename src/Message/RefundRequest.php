@@ -46,7 +46,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see PurchaseRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api#create_refund
+ * @link http://www.openpay.mx/en/docs/api/#create_refund
  */
 class RefundRequest extends AbstractRequest
 {
@@ -61,7 +61,7 @@ class RefundRequest extends AbstractRequest
     /**
      * Whether to refund the application fee associated with a charge.
      *
-     * From the {@link https://Openpay.com/docs/api#create_refund Openpay docs}:
+     * From the {@link http://www.openpay.mx/en/docs/api/#create_refund Openpay docs}:
      * Boolean indicating whether the application fee should be refunded
      * when refunding this charge. If a full charge refund is given, the
      * full application fee will be refunded. Else, the application fee

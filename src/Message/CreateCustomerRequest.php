@@ -59,7 +59,7 @@ namespace Omnipay\Openpay\Message;
  *   }
  * </code>
  *
- * @link https://Openpay.com/docs/api#customers
+ * @link http://www.openpay.mx/en/docs/api/#customers
  */
 class CreateCustomerRequest extends AbstractRequest
 {

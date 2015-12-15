@@ -68,7 +68,7 @@ namespace Omnipay\Openpay\Message;
  * </code>
  *
  * @see \Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api#charges
+ * @link http://www.openpay.mx/en/docs/api/#charges
  */
 class AuthorizeRequest extends AbstractRequest
 {

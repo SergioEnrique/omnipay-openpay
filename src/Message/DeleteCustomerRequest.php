@@ -11,7 +11,7 @@ namespace Omnipay\Openpay\Message;
  * Permanently deletes a customer. It cannot be undone. Also immediately
  * cancels any active subscriptions on the customer. 
  *
- * @link https://Openpay.com/docs/api#delete_customer
+ * @link http://www.openpay.mx/en/docs/api/#delete_customer
  */
 class DeleteCustomerRequest extends AbstractRequest
 {

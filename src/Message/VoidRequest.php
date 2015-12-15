@@ -32,7 +32,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see RefundRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api#create_refund
+ * @link http://www.openpay.mx/en/docs/api/#create_refund
  */
 class VoidRequest extends RefundRequest
 {

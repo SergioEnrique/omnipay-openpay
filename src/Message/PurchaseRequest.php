@@ -62,7 +62,7 @@ namespace Omnipay\Openpay\Message;
  * class and over-rides the getData method setting capture = true.
  *
  * @see \Omnipay\Openpay\Gateway
- * @link https://Openpay.com/docs/api#charges
+ * @link http://www.openpay.mx/en/docs/api/#charges
  */
 class PurchaseRequest extends AuthorizeRequest
 {

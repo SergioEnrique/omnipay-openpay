@@ -29,7 +29,7 @@ namespace Omnipay\Openpay\Message;
  * a customerReference and delete the customer.  This might be
  * dangerous but it's the best way to ensure backwards compatibility.
  *
- * @link https://Openpay.com/docs/api#delete_card
+ * @link http://www.openpay.mx/en/docs/api/#delete_card
  */
 class DeleteCardRequest extends AbstractRequest
 {

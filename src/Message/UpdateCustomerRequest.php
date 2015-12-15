@@ -32,7 +32,7 @@ namespace Omnipay\Openpay\Message;
  * This request accepts mostly the same arguments as the customer
  * creation call. 
  *
- * @link https://Openpay.com/docs/api#update_customer
+ * @link http://www.openpay.mx/en/docs/api/#update_customer
  */
 class UpdateCustomerRequest extends AbstractRequest
 {
