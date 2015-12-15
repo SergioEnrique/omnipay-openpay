@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 use Mockery;
 use Omnipay\Tests\TestCase;
@@ -9,7 +9,7 @@ class AbstractRequestTest extends TestCase
 {
     public function setUp()
     {
-        $this->request = Mockery::mock('\Omnipay\Stripe\Message\AbstractRequest')->makePartial();
+        $this->request = Mockery::mock('\Omnipay\Openpay\Message\AbstractRequest')->makePartial();
         $this->request->initialize();
     }
 

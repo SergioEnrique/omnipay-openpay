@@ -3,7 +3,7 @@
  * Stripe Fetch Transaction Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Fetch Transaction Request
@@ -22,7 +22,7 @@ namespace Omnipay\Stripe\Message;
  * </code>
  *
  * @see PurchaseRequest
- * @see Omnipay\Stripe\Gateway
+ * @see Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api#retrieve_charge
  */
 class FetchTransactionRequest extends AbstractRequest

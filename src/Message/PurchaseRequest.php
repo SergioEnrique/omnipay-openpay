@@ -3,7 +3,7 @@
  * Stripe Purchase Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Purchase Request
@@ -61,7 +61,7 @@ namespace Omnipay\Stripe\Message;
  * Authorize request, this class simply extends the AuthorizeRequest
  * class and over-rides the getData method setting capture = true.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api#charges
  */
 class PurchaseRequest extends AuthorizeRequest

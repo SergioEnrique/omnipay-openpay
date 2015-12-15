@@ -3,7 +3,7 @@
  * Stripe Void Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Void Request
@@ -31,7 +31,7 @@ namespace Omnipay\Stripe\Message;
  * </code>
  *
  * @see RefundRequest
- * @see Omnipay\Stripe\Gateway
+ * @see Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api#create_refund
  */
 class VoidRequest extends RefundRequest

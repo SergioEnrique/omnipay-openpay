@@ -3,7 +3,7 @@
  * Stripe Create Credit Card Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Create Credit Card Request

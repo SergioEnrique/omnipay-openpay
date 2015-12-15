@@ -3,7 +3,7 @@
  * Stripe Response
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 
@@ -12,7 +12,7 @@ use Omnipay\Common\Message\AbstractResponse;
  *
  * This is the response class for all Stripe requests.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Omnipay\Openpay\Gateway
  */
 class Response extends AbstractResponse
 {

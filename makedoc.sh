@@ -6,7 +6,7 @@
 # (c) Del 2015 http://www.babel.com.au/
 #
 
-APPNAME='Omnipay Stripe Gateway Module'
+APPNAME='Omnipay Openpay Gateway Module'
 CMDFILE=apigen.cmd.$$
 DESTDIR=./documents
 

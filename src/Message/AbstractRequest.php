@@ -3,7 +3,7 @@
  * Stripe Abstract Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Abstract Request
@@ -27,9 +27,9 @@ namespace Omnipay\Stripe\Message;
  * You can use any of the cards listed at https://stripe.com/docs/testing
  * for testing.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api
- * @method \Omnipay\Stripe\Message\Response send()
+ * @method \Omnipay\Openpay\Message\Response send()
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 {

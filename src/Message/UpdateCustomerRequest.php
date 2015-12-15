@@ -3,7 +3,7 @@
  * Stripe Update Customer Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Update Customer Request

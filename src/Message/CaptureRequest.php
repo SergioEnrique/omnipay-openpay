@@ -3,7 +3,7 @@
  * Stripe Capture Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Capture Request

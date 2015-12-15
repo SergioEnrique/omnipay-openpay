@@ -3,7 +3,7 @@
  * Stripe Authorize Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Authorize Request
@@ -67,7 +67,7 @@ namespace Omnipay\Stripe\Message;
  *   }
  * </code>
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api#charges
  */
 class AuthorizeRequest extends AbstractRequest

@@ -3,11 +3,11 @@
  * Stripe Gateway
  */
 
-namespace Omnipay\Stripe;
+namespace Omnipay\Openpay;
 
 use Omnipay\Common\AbstractGateway;
-use Omnipay\Stripe\Message\PurchaseRequest;
-use Omnipay\Stripe\Message\RefundRequest;
+use Omnipay\Openpay\Message\PurchaseRequest;
+use Omnipay\Openpay\Message\RefundRequest;
 
 /**
  * Stripe Gateway
@@ -78,7 +78,7 @@ use Omnipay\Stripe\Message\RefundRequest;
  * the apiKey parameter when creating the gateway object.
  *
  * @see \Omnipay\Common\AbstractGateway
- * @see \Omnipay\Stripe\Message\AbstractRequest
+ * @see \Omnipay\Openpay\Message\AbstractRequest
  * @link https://stripe.com/docs/api
  */
 class Gateway extends AbstractGateway
@@ -158,11 +158,11 @@ class Gateway extends AbstractGateway
      * card.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\AuthorizeRequest
+     * @return \Omnipay\Openpay\Message\AuthorizeRequest
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\AuthorizeRequest', $parameters);
     }
 
     /**
@@ -171,11 +171,11 @@ class Gateway extends AbstractGateway
      * Use this request to capture and process a previously created authorization.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CaptureRequest
+     * @return \Omnipay\Openpay\Message\CaptureRequest
      */
     public function capture(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CaptureRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\CaptureRequest', $parameters);
     }
 
     /**
@@ -197,11 +197,11 @@ class Gateway extends AbstractGateway
      * card.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\PurchaseRequest
+     * @return \Omnipay\Openpay\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PurchaseRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\PurchaseRequest', $parameters);
     }
 
     /**
@@ -217,31 +217,31 @@ class Gateway extends AbstractGateway
      * refunded.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\RefundRequest
+     * @return \Omnipay\Openpay\Message\RefundRequest
      */
     public function refund(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\RefundRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\RefundRequest', $parameters);
     }
 
     /**
      * Fetch Transaction Request
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\VoidRequest
+     * @return \Omnipay\Openpay\Message\VoidRequest
      */
     public function void(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\VoidRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\VoidRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchTransactionRequest
+     * @return \Omnipay\Openpay\Message\FetchTransactionRequest
      */
     public function fetchTransaction(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchTransactionRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\FetchTransactionRequest', $parameters);
     }
 
     //
@@ -260,11 +260,11 @@ class Gateway extends AbstractGateway
      * and a card token, and is essentially the same as CreateCustomerRequest
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateCardRequest
+     * @return \Omnipay\Openpay\Message\CreateCardRequest
      */
     public function createCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateCardRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\CreateCardRequest', $parameters);
     }
 
     /**
@@ -282,11 +282,11 @@ class Gateway extends AbstractGateway
      *
      * @link https://stripe.com/docs/api#update_card
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\UpdateCardRequest
+     * @return \Omnipay\Openpay\Message\UpdateCardRequest
      */
     public function updateCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\UpdateCardRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\UpdateCardRequest', $parameters);
     }
 
     /**
@@ -314,11 +314,11 @@ class Gateway extends AbstractGateway
      * dangerous but it's the best way to ensure backwards compatibility.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\DeleteCardRequest
+     * @return \Omnipay\Openpay\Message\DeleteCardRequest
      */
     public function deleteCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeleteCardRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\DeleteCardRequest', $parameters);
     }
 
     //
@@ -336,11 +336,11 @@ class Gateway extends AbstractGateway
      * your customers. 
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateCustomerRequest
+     * @return \Omnipay\Openpay\Message\CreateCustomerRequest
      */
     public function createCustomer(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateCustomerRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\CreateCustomerRequest', $parameters);
     }
 
     /**
@@ -365,11 +365,11 @@ class Gateway extends AbstractGateway
      * creation call. 
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateCustomerRequest
+     * @return \Omnipay\Openpay\Message\CreateCustomerRequest
      */
     public function updateCustomer(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\UpdateCustomerRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\UpdateCustomerRequest', $parameters);
     }
 
     /**
@@ -379,11 +379,11 @@ class Gateway extends AbstractGateway
      * cancels any active subscriptions on the customer. 
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\DeleteCustomerRequest
+     * @return \Omnipay\Openpay\Message\DeleteCustomerRequest
      */
     public function deleteCustomer(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeleteCustomerRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\DeleteCustomerRequest', $parameters);
     }
 
     //
@@ -413,10 +413,10 @@ class Gateway extends AbstractGateway
      * Customer or Recipient objects. 
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchTokenRequest
+     * @return \Omnipay\Openpay\Message\FetchTokenRequest
      */
     public function fetchToken(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchTokenRequest', $parameters);
+        return $this->createRequest('\Omnipay\Openpay\Message\FetchTokenRequest', $parameters);
     }
 }

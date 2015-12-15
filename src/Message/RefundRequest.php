@@ -3,7 +3,7 @@
  * Stripe Refund Request
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Omnipay\Openpay\Message;
 
 /**
  * Stripe Refund Request
@@ -45,7 +45,7 @@ namespace Omnipay\Stripe\Message;
  * </code>
  *
  * @see PurchaseRequest
- * @see Omnipay\Stripe\Gateway
+ * @see Omnipay\Openpay\Gateway
  * @link https://stripe.com/docs/api#create_refund
  */
 class RefundRequest extends AbstractRequest
