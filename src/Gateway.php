@@ -1,6 +1,6 @@
 <?php
 /**
- * Stripe Gateway
+ * Openpay Gateway
  */
 
 namespace Omnipay\Openpay;
@@ -10,14 +10,14 @@ use Omnipay\Openpay\Message\PurchaseRequest;
 use Omnipay\Openpay\Message\RefundRequest;
 
 /**
- * Stripe Gateway
+ * Openpay Gateway
  *
  * Example:
  *
  * <code>
- *   // Create a gateway for the Stripe Gateway
+ *   // Create a gateway for the Openpay Gateway
  *   // (routes to GatewayFactory::create)
- *   $gateway = Omnipay::create('Stripe');
+ *   $gateway = Omnipay::create('Openpay');
  *
  *   // Initialise the gateway
  *   $gateway->initialize(array(
@@ -57,19 +57,19 @@ use Omnipay\Openpay\Message\RefundRequest;
  *
  * Test modes:
  *
- * Stripe accounts have test-mode API keys as well as live-mode
+ * Openpay accounts have test-mode API keys as well as live-mode
  * API keys. These keys can be active at the same time. Data
  * created with test-mode credentials will never hit the credit
  * card networks and will never cost anyone money.
  *
  * Unlike some gateways, there is no test mode endpoint separate
- * to the live mode endpoint, the Stripe API endpoint is the same
+ * to the live mode endpoint, the Openpay API endpoint is the same
  * for test and for live.
  *
  * Setting the testMode flag on this gateway has no effect.  To
  * use test mode just use your test mode API key.
  *
- * You can use any of the cards listed at https://stripe.com/docs/testing
+ * You can use any of the cards listed at https://Openpay.com/docs/testing
  * for testing.
  *
  * Authentication:
@@ -79,13 +79,13 @@ use Omnipay\Openpay\Message\RefundRequest;
  *
  * @see \Omnipay\Common\AbstractGateway
  * @see \Omnipay\Openpay\Message\AbstractRequest
- * @link https://stripe.com/docs/api
+ * @link https://Openpay.com/docs/api
  */
 class Gateway extends AbstractGateway
 {
     public function getName()
     {
-        return 'Stripe';
+        return 'Openpay';
     }
 
     /**
@@ -119,13 +119,13 @@ class Gateway extends AbstractGateway
      * Authentication is by means of a single secret API key set as
      * the apiKey parameter when creating the gateway object.
      *
-     * Stripe accounts have test-mode API keys as well as live-mode
+     * Openpay accounts have test-mode API keys as well as live-mode
      * API keys. These keys can be active at the same time. Data
      * created with test-mode credentials will never hit the credit
      * card networks and will never cost anyone money.
      *
      * Unlike some gateways, there is no test mode endpoint separate
-     * to the live mode endpoint, the Stripe API endpoint is the same
+     * to the live mode endpoint, the Openpay API endpoint is the same
      * for test and for live.
      *
      * Setting the testMode flag on this gateway has no effect.  To
@@ -151,7 +151,7 @@ class Gateway extends AbstractGateway
      * is passed in then the cardReference must be the reference of a card
      * assigned to the customer.  Otherwise, if you do not pass a customer ID,
      * the card you provide must either be a token, like the ones returned by
-     * Stripe.js, or a dictionary containing a user's credit card details.
+     * Openpay.js, or a dictionary containing a user's credit card details.
      *
      * IN OTHER WORDS: You cannot just pass a card reference into this request,
      * you must also provide a customer reference if you want to use a stored
@@ -183,14 +183,14 @@ class Gateway extends AbstractGateway
      *
      * To charge a credit card, you create a new charge object. If your API key
      * is in test mode, the supplied card won't actually be charged, though
-     * everything else will occur as if in live mode. (Stripe assumes that the
+     * everything else will occur as if in live mode. (Openpay assumes that the
      * charge would have completed successfully). 
      *
      * Either a customerReference or a card is required.  If a customerReference
      * is passed in then the cardReference must be the reference of a card
      * assigned to the customer.  Otherwise, if you do not pass a customer ID,
      * the card you provide must either be a token, like the ones returned by
-     * Stripe.js, or a dictionary containing a user's credit card details.
+     * Openpay.js, or a dictionary containing a user's credit card details.
      *
      * IN OTHER WORDS: You cannot just pass a card reference into this request,
      * you must also provide a customer reference if you want to use a stored
@@ -246,7 +246,7 @@ class Gateway extends AbstractGateway
 
     //
     // Cards
-    // @link https://stripe.com/docs/api#cards
+    // @link https://Openpay.com/docs/api#cards
     //
 
     /**
@@ -272,15 +272,15 @@ class Gateway extends AbstractGateway
      *
      * If you need to update only some card details, like the billing
      * address or expiration date, you can do so without having to re-enter
-     * the full card details. Stripe also works directly with card networks
+     * the full card details. Openpay also works directly with card networks
      * so that your customers can continue using your service without
      * interruption.
      *
-     * When you update a card, Stripe will automatically validate the card.
+     * When you update a card, Openpay will automatically validate the card.
      *
      * This requires both a customerReference and a cardReference.
      *
-     * @link https://stripe.com/docs/api#update_card
+     * @link https://Openpay.com/docs/api#update_card
      * @param array $parameters
      * @return \Omnipay\Openpay\Message\UpdateCardRequest
      */
@@ -323,7 +323,7 @@ class Gateway extends AbstractGateway
 
     //
     // Customers
-    // link: https://stripe.com/docs/api#customers
+    // link: https://Openpay.com/docs/api#customers
     //
     
     /**
@@ -388,7 +388,7 @@ class Gateway extends AbstractGateway
 
     //
     // Tokens
-    // @link https://stripe.com/docs/api#tokens
+    // @link https://Openpay.com/docs/api#tokens
     //
     // This gateway does not currently have a CreateToken message.  In
     // any case tokens are probably not what you are looking for because
@@ -398,11 +398,11 @@ class Gateway extends AbstractGateway
     //
 
     /**
-     * Stripe Fetch Token Request
+     * Openpay Fetch Token Request
      *
      * Often you want to be able to charge credit cards or send payments
      * to bank accounts without having to hold sensitive card information
-     * on your own servers. Stripe.js makes this easy in the browser, but
+     * on your own servers. Openpay.js makes this easy in the browser, but
      * you can use the same technique in other environments with our token API.
      *
      * Tokens can be created with your publishable API key, which can safely

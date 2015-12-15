@@ -1,16 +1,16 @@
 <?php
 /**
- * Stripe Fetch Token Request
+ * Openpay Fetch Token Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Fetch Token Request
+ * Openpay Fetch Token Request
  *
  * Often you want to be able to charge credit cards or send payments
  * to bank accounts without having to hold sensitive card information
- * on your own servers. Stripe.js makes this easy in the browser, but
+ * on your own servers. Openpay.js makes this easy in the browser, but
  * you can use the same technique in other environments with our token API.
  *
  * Tokens can be created with your publishable API key, which can safely
@@ -20,7 +20,7 @@ namespace Omnipay\Openpay\Message;
  * than once—to store these details for use later, you should create
  * Customer or Recipient objects. 
  *
- * @link https://stripe.com/docs/api#tokens
+ * @link https://Openpay.com/docs/api#tokens
  */
 class FetchTokenRequest extends AbstractRequest
 {

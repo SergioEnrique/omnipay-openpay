@@ -1,12 +1,12 @@
 <?php
 /**
- * Stripe Fetch Transaction Request
+ * Openpay Fetch Transaction Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Fetch Transaction Request
+ * Openpay Fetch Transaction Request
  *
  * Example -- note this example assumes that the purchase has been successful
  * and that the transaction ID returned from the purchase is held in $sale_id.
@@ -23,7 +23,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see PurchaseRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://stripe.com/docs/api#retrieve_charge
+ * @link https://Openpay.com/docs/api#retrieve_charge
  */
 class FetchTransactionRequest extends AbstractRequest
 {

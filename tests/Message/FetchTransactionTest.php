@@ -14,7 +14,7 @@ class FetchTransactionRequestTest extends TestCase
 
     public function testEndpoint()
     {
-        $this->assertSame('https://api.stripe.com/v1/charges/ch_29yrvk84GVDsq9', $this->request->getEndpoint());
+        $this->assertSame('https://api.Openpay.com/v1/charges/ch_29yrvk84GVDsq9', $this->request->getEndpoint());
     }
 
     public function testSendSuccess()

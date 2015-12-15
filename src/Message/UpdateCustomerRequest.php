@@ -1,12 +1,12 @@
 <?php
 /**
- * Stripe Update Customer Request
+ * Openpay Update Customer Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Update Customer Request
+ * Openpay Update Customer Request
  *
  * Customer objects allow you to perform recurring charges and
  * track multiple charges that are associated with the same customer.
@@ -32,7 +32,7 @@ namespace Omnipay\Openpay\Message;
  * This request accepts mostly the same arguments as the customer
  * creation call. 
  *
- * @link https://stripe.com/docs/api#update_customer
+ * @link https://Openpay.com/docs/api#update_customer
  */
 class UpdateCustomerRequest extends AbstractRequest
 {

@@ -16,10 +16,10 @@ class DeleteCardRequestTest extends TestCase
     {
         $this->request->setCustomerReference('');
         $this->request->setCardReference('cus_1MZSEtqSghKx99');
-        $this->assertSame('https://api.stripe.com/v1/customers/cus_1MZSEtqSghKx99', $this->request->getEndpoint());
+        $this->assertSame('https://api.Openpay.com/v1/customers/cus_1MZSEtqSghKx99', $this->request->getEndpoint());
         $this->request->setCustomerReference('cus_1MZSEtqSghKx99');
         $this->request->setCardReference('card_15Wg7vIobxWFFmzdvC5fVY67');
-        $this->assertSame('https://api.stripe.com/v1/customers/cus_1MZSEtqSghKx99/cards/card_15Wg7vIobxWFFmzdvC5fVY67', $this->request->getEndpoint());
+        $this->assertSame('https://api.Openpay.com/v1/customers/cus_1MZSEtqSghKx99/cards/card_15Wg7vIobxWFFmzdvC5fVY67', $this->request->getEndpoint());
     }
 
     public function testSendSuccess()

@@ -1,14 +1,14 @@
 <?php
 /**
- * Stripe Void Request
+ * Openpay Void Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Void Request
+ * Openpay Void Request
  *
- * Stripe does not support voiding, per se, but
+ * Openpay does not support voiding, per se, but
  * we treat it as a full refund.
  *
  * See RefundRequest for additional information
@@ -32,7 +32,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see RefundRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://stripe.com/docs/api#create_refund
+ * @link https://Openpay.com/docs/api#create_refund
  */
 class VoidRequest extends RefundRequest
 {

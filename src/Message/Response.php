@@ -1,6 +1,6 @@
 <?php
 /**
- * Stripe Response
+ * Openpay Response
  */
 
 namespace Omnipay\Openpay\Message;
@@ -8,9 +8,9 @@ namespace Omnipay\Openpay\Message;
 use Omnipay\Common\Message\AbstractResponse;
 
 /**
- * Stripe Response
+ * Openpay Response
  *
- * This is the response class for all Stripe requests.
+ * This is the response class for all Openpay requests.
  *
  * @see \Omnipay\Openpay\Gateway
  */

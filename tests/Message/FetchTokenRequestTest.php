@@ -19,7 +19,7 @@ class FetchTokenRequestTest extends TestCase
 
     public function testEndpoint()
     {
-        $this->assertSame('https://api.stripe.com/v1/tokens/tok_15Kuns2eZvKYlo2CDt9wRdzS', $this->request->getEndpoint());
+        $this->assertSame('https://api.Openpay.com/v1/tokens/tok_15Kuns2eZvKYlo2CDt9wRdzS', $this->request->getEndpoint());
     }
 
     public function testSendSuccess()

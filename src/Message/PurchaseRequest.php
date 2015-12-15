@@ -1,24 +1,24 @@
 <?php
 /**
- * Stripe Purchase Request
+ * Openpay Purchase Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Purchase Request
+ * Openpay Purchase Request
  *
  * To charge a credit card, you create a new charge object. If your API key
  * is in test mode, the supplied card won't actually be charged, though
- * everything else will occur as if in live mode. (Stripe assumes that the
+ * everything else will occur as if in live mode. (Openpay assumes that the
  * charge would have completed successfully). 
  *
  * Example:
  *
  * <code>
- *   // Create a gateway for the Stripe Gateway
+ *   // Create a gateway for the Openpay Gateway
  *   // (routes to GatewayFactory::create)
- *   $gateway = Omnipay::create('Stripe');
+ *   $gateway = Omnipay::create('Openpay');
  *
  *   // Initialise the gateway
  *   $gateway->initialize(array(
@@ -57,12 +57,12 @@ namespace Omnipay\Openpay\Message;
  *   }
  * </code>
  *
- * Because a purchase request in Stripe looks similar to an
+ * Because a purchase request in Openpay looks similar to an
  * Authorize request, this class simply extends the AuthorizeRequest
  * class and over-rides the getData method setting capture = true.
  *
  * @see \Omnipay\Openpay\Gateway
- * @link https://stripe.com/docs/api#charges
+ * @link https://Openpay.com/docs/api#charges
  */
 class PurchaseRequest extends AuthorizeRequest
 {

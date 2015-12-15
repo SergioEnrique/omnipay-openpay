@@ -15,7 +15,7 @@ class RefundRequestTest extends TestCase
 
     public function testEndpoint()
     {
-        $this->assertSame('https://api.stripe.com/v1/charges/ch_12RgN9L7XhO9mI/refund', $this->request->getEndpoint());
+        $this->assertSame('https://api.Openpay.com/v1/charges/ch_12RgN9L7XhO9mI/refund', $this->request->getEndpoint());
     }
 
     public function testAmount()

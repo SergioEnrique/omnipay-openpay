@@ -22,8 +22,8 @@ Access-Control-Max-Age: 300
     {
       "amount": 59,
       "currency": "usd",
-      "type": "stripe_fee",
-      "description": "Stripe processing fees",
+      "type": "Openpay_fee",
+      "description": "Openpay processing fees",
       "application": null,
       "amount_refunded": 0
     }

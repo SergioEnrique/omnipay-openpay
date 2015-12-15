@@ -1,12 +1,12 @@
 <?php
 /**
- * Stripe Authorize Request
+ * Openpay Authorize Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Authorize Request
+ * Openpay Authorize Request
  *
  * An Authorize request is similar to a purchase request but the
  * charge issues an authorization (or pre-authorization), and no money
@@ -17,7 +17,7 @@ namespace Omnipay\Openpay\Message;
  * is passed in then the cardReference must be the reference of a card
  * assigned to the customer.  Otherwise, if you do not pass a customer ID,
  * the card you provide must either be a token, like the ones returned by
- * Stripe.js, or a dictionary containing a user's credit card details.
+ * Openpay.js, or a dictionary containing a user's credit card details.
  *
  * IN OTHER WORDS: You cannot just pass a card reference into this request,
  * you must also provide a customer reference if you want to use a stored
@@ -26,9 +26,9 @@ namespace Omnipay\Openpay\Message;
  * Example:
  *
  * <code>
- *   // Create a gateway for the Stripe Gateway
+ *   // Create a gateway for the Openpay Gateway
  *   // (routes to GatewayFactory::create)
- *   $gateway = Omnipay::create('Stripe');
+ *   $gateway = Omnipay::create('Openpay');
  *
  *   // Initialise the gateway
  *   $gateway->initialize(array(
@@ -68,7 +68,7 @@ namespace Omnipay\Openpay\Message;
  * </code>
  *
  * @see \Omnipay\Openpay\Gateway
- * @link https://stripe.com/docs/api#charges
+ * @link https://Openpay.com/docs/api#charges
  */
 class AuthorizeRequest extends AbstractRequest
 {

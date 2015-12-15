@@ -1,12 +1,12 @@
 <?php
 /**
- * Stripe Refund Request
+ * Openpay Refund Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Refund Request
+ * Openpay Refund Request
  *
  * When you create a new refund, you must specify a
  * charge to create it on.
@@ -46,7 +46,7 @@ namespace Omnipay\Openpay\Message;
  *
  * @see PurchaseRequest
  * @see Omnipay\Openpay\Gateway
- * @link https://stripe.com/docs/api#create_refund
+ * @link https://Openpay.com/docs/api#create_refund
  */
 class RefundRequest extends AbstractRequest
 {
@@ -61,7 +61,7 @@ class RefundRequest extends AbstractRequest
     /**
      * Whether to refund the application fee associated with a charge.
      *
-     * From the {@link https://stripe.com/docs/api#create_refund Stripe docs}:
+     * From the {@link https://Openpay.com/docs/api#create_refund Openpay docs}:
      * Boolean indicating whether the application fee should be refunded
      * when refunding this charge. If a full charge refund is given, the
      * full application fee will be refunded. Else, the application fee

@@ -1,12 +1,12 @@
 <?php
 /**
- * Stripe Create Customer Request
+ * Openpay Create Customer Request
  */
 
 namespace Omnipay\Openpay\Message;
 
 /**
- * Stripe Create Customer Request
+ * Openpay Create Customer Request
  *
  * Customer objects allow you to perform recurring charges and
  * track multiple charges that are associated with the same customer.
@@ -17,9 +17,9 @@ namespace Omnipay\Openpay\Message;
  * Example:
  *
  * <code>
- *   // Create a gateway for the Stripe Gateway
+ *   // Create a gateway for the Openpay Gateway
  *   // (routes to GatewayFactory::create)
- *   $gateway = Omnipay::create('Stripe');
+ *   $gateway = Omnipay::create('Openpay');
  *
  *   // Initialise the gateway
  *   $gateway->initialize(array(
@@ -59,7 +59,7 @@ namespace Omnipay\Openpay\Message;
  *   }
  * </code>
  *
- * @link https://stripe.com/docs/api#customers
+ * @link https://Openpay.com/docs/api#customers
  */
 class CreateCustomerRequest extends AbstractRequest
 {
