@@ -79,7 +79,7 @@ use Omnipay\Openpay\Message\RefundRequest;
  *
  * @see \Omnipay\Common\AbstractGateway
  * @see \Omnipay\Openpay\Message\AbstractRequest
- * @link https://Openpay.com/docs/api
+ * @link http://www.openpay.mx/en/docs/api/
  */
 class Gateway extends AbstractGateway
 {

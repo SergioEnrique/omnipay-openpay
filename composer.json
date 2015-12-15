@@ -8,7 +8,7 @@
         "omnipay",
         "pay",
         "payment",
-        "stripe"
+        "openpay"
     ],
     "homepage": "https://github.com/SergioEnrique/omnipay-openpay",
     "license": "MIT",
@@ -23,11 +23,11 @@
         },
         {
             "name": "Omnipay Contributors",
-            "homepage": "https://github.com/thephpleague/omnipay-stripe/contributors"
+            "homepage": "https://github.com/SergioEnrique/omnipay-openpay/graphs/contributors"
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\Stripe\\" : "src/" }
+        "psr-4": { "Omnipay\\Openpay\\" : "src/" }
     },
     "require": {
         "omnipay/common": "~2.0"
